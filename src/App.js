@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import H1Component from './h1Component.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+///// for writing js  
+const clickHandler=()=>{
+  console.log("click-click")
 }
+/////js 
+
+
+  return ( <div>
+    
+    <H1Component clickFunction={clickHandler}/>
+    {/* <h1 onClick={clickHandler}>Woobly</h1> */}
+
+  </div>);
+
+//.addEventListener('click' ()=>{})
+
+
+  }
 
 export default App;
